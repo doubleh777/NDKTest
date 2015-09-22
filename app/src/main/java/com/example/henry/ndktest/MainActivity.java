@@ -25,9 +25,12 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         TextView view = (TextView) findViewById(R.id.textView);
-        view.setText(getStringFromNative());
+        view.setText(test());
 
     }
 
+    public String test(){
+        return getStringFromNative() + " But I don't like you!";
+    }
 
 }
